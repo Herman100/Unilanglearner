@@ -1,0 +1,113 @@
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background-color: #1b1a55;
+  z-index: 1;
+}
+
+.heading h1 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.createButton {
+  padding: 10px;
+  color: #1b1a55;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.single_card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.get_card_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1b1a55;
+  gap: 40px;
+}
+
+.card_detail {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: inherit;
+  border-radius: 5px;
+  outline: none;
+  border-bottom: 1.5px solid #fff;
+}
+
+.card_detail h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card_detail .delete_icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.card_front input,
+.card_back input {
+  width: 100%;
+  background-color: inherit;
+  border-radius: 5px;
+  outline: none;
+  border-bottom: 1.5px solid #fff;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .create {
+    width: 100%;
+  }
+
+  .heading {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heading h1 {
+    font-size: 1.2rem;
+  }
+
+  .createButton {
+    width: 100%;
+  }
+
+  .single_card {
+    width: 90%;
+  }
+}

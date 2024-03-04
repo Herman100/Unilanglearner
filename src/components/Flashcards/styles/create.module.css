@@ -1,0 +1,139 @@
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.heading {
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #fff;
+  background-color: #070f2b;
+  z-index: 1;
+}
+
+.heading h1 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.createButton {
+  padding: 10px;
+  color: #1b1a55;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.card_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card_title {
+  width: 80%;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.card_title input {
+  width: 100%;
+  padding: 14px 10px;
+  background-color: inherit;
+  border-radius: 5px;
+  outline: none;
+  border-bottom: 1.5px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card_description {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.card_description textarea {
+  height: 100px;
+  width: 100%;
+  padding: 14px 10px;
+  background-color: inherit;
+  border-radius: 5px;
+  outline: none;
+  border-bottom: 1.5px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.addCard {
+  gap: 20px;
+  margin-bottom: 60px;
+  padding: 0 130px;
+}
+
+.addCardButton {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  background-color: #1b1a55;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .create {
+    width: 100%;
+  }
+
+  .heading {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heading h1 {
+    font-size: 1.2rem;
+  }
+
+  .card_description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card_title input {
+    width: 100%;
+    text-align: left;
+  }
+  .createButton {
+    width: 100%;
+  }
+
+  .single_card {
+    width: 90%;
+  }
+
+  .addCard {
+    padding: 0 103px;
+  }
+}

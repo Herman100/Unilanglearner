@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  height: 100px;
+  background-color: #070f2b;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  border-top: 1px solid #535c91;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 10;
+    min-width: 300px;
+  }
+}

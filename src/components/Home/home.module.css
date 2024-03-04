@@ -1,0 +1,154 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #070f2b;
+  height: auto;
+}
+
+.landing {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 720px;
+}
+
+.landing img {
+  width: 100%;
+}
+
+.landtext {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  color: #fff;
+  padding: 40px 120px;
+  top: 0;
+  left: 0;
+  background-color: #000000b7;
+  width: 100%;
+}
+
+.landtext h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.landtext p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.signup,
+.signupsecondary {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #070f2b;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.signup:hover {
+  background-color: #fff;
+  color: #070f2b;
+  border: 1px solid #070f2b;
+}
+
+.signupsecondary {
+  background-color: #fff;
+  color: #070f2b;
+  margin-bottom: 64px;
+}
+
+.signupsecondary:hover {
+  background-color: #070f2b;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #070f2b;
+  height: auto;
+  margin: 60px 0;
+  gap: 32px;
+}
+
+.home h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 60px 0 20px 0;
+  text-align: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9290c3;
+  color: #070f2b;
+  width: 300px;
+  height: 425px;
+  gap: 20px;
+  border-radius: 13px;
+  margin-bottom: 20px;
+}
+
+.servicetext {
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1b1a55;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  height: 50%;
+}
+
+.serviceimg {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .landtext {
+    padding: 20px;
+  }
+  .landtext h1 {
+    font-size: 2rem;
+  }
+  .landtext p {
+    font-size: 1rem;
+  }
+
+  .landing {
+    height: 50vh;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .landing img {
+    min-height: 490px;
+  }
+  .landtext {
+    padding: 20px;
+  }
+}
