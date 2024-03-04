@@ -76,5 +76,5 @@ Unilang Learner is licensed under the [MIT License](https://opensource.org/licen
 ## Contact :email:
 
 For any inquiries or feedback, please contact us via  
-Email: [![Email](https://img.shields.io/badge/Email-your--email%40example.com-blue)](mailto:hermankwamebour30@gmail.com)
+Email: hermankwamebour30@gmail.com
 Github: [![Github](https://img.shields.io/badge/Github-Herman100-black)](https://github.com/Herman100)
