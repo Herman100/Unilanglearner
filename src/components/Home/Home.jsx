@@ -30,7 +30,7 @@ export default function Home() {
                 Get Started
               </Link>
             ) : (
-              <Link to="/Unilanglearner/cardsets" className={styles.signup}>
+              <Link to="/Unilanglearner/create" className={styles.signup}>
                 Create Flashcards Now
               </Link>
             )}
