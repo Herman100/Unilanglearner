@@ -12,13 +12,15 @@ function Header() {
           <p>Unilanglearner</p>
         </Link>
         <div className={styles.headerRight}>
+          <Link to="Unilanglearner" className={styles.flashcards}>
+            <p> Home</p>
+          </Link>
           <Link to="/create" className={styles.flashcards}>
             <p> Create</p>
           </Link>
           <Link to="/cardsets" className={styles.flashcards}>
             <p> Flashcards</p>
           </Link>
-
           <Logout />
         </div>
       </div>

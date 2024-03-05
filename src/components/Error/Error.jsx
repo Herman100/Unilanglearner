@@ -14,11 +14,10 @@ function Error() {
             The page you are looking for does not exist. Please check the URL
             and try again.
           </p>
-          <button className={styles.error_button}>
-            <Link className={styles.error_link} to="/">
-              Home
-            </Link>
-          </button>
+
+          <Link className={styles.error_link} to="Unilanglearner">
+            Home
+          </Link>
         </div>
         <div className={styles.error_image}>
           <img src={svg} alt="404 Not Found" />

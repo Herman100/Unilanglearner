@@ -5,8 +5,11 @@ import anywhere from "./assets/anywhere.svg";
 import flashcards from "./assets/flashcards.svg";
 import learn from "./assets/learn.svg";
 import landingbg from "./assets/landingbg.jpg";
+import { useAuth } from "../../contexts/AuthContextProvider";
 
 export default function Home() {
+  const { currentUser } = useAuth();
+
   return (
     <>
       <div className={styles.home}>
@@ -22,9 +25,15 @@ export default function Home() {
               language. You can use flashcards created by others or create your
               own flashcards to learn a new language.
             </p>
-            <Link to="/signup" className={styles.signup}>
-              Get Started
-            </Link>
+            {currentUser === null ? (
+              <Link to="/login" className={styles.signup}>
+                Get Started
+              </Link>
+            ) : (
+              <Link to="/cardsets" className={styles.signup}>
+                Create Flashcards Now
+              </Link>
+            )}
           </div>
         </div>
         <h2>What you Get from Unilanglearner</h2>
@@ -74,9 +83,15 @@ export default function Home() {
             />
           </div>
         </div>
-        <Link to="/signup" className={styles.signupsecondary}>
-          Start Learning Now
-        </Link>
+        {currentUser === null ? (
+          <Link to="/login" className={styles.signupsecondary}>
+            Start Learning Now
+          </Link>
+        ) : (
+          <Link to="/cardsets" className={styles.signupsecondary}>
+            Start Learning Now
+          </Link>
+        )}
       </div>
     </>
   );
