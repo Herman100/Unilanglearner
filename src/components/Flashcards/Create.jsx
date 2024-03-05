@@ -45,7 +45,7 @@ export default function Create() {
         <div className={styles.create}>
           <div className={styles.heading}>
             <h1>Create a set of flashcards</h1>
-            <Link to="/Unilanglearner/cardsets">
+            <Link to="/cardsets">
               <button
                 className={styles.createButton}
                 onClick={(e) => handleSubmit(e, cards)}

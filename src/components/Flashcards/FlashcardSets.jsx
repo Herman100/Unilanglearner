@@ -16,7 +16,7 @@ export default function FlashcardSets() {
 
   const handleSetClick = (setId) => {
     // navigate to set dynamically
-    navigate(`sets/${setId}`);
+    navigate(`/sets/${setId}`);
   };
 
   return (

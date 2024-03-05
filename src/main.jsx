@@ -28,11 +28,11 @@ const router = createBrowserRouter(
       <Route index path="signup" element={<SignUp />} />
       <Route index path="logout" element={<Logout />} />
       <Route index path="reset" element={<ForgotPassword />} />
-      <Route path="/Unilanglearner/" element={<Layout />}>
+      <Route path="/" element={<Layout />}>
         <Route index path="" element={<Home />} />
         <Route index path="create" element={<Create />} />
         <Route index path="cardsets" element={<FlashcardSets />} />
-        <Route index path="cardsets/sets/:setId" element={<Review />} />
+        <Route index path="sets/:setId" element={<Review />} />
       </Route>
       <Route path="*" element={<Error />} />
     </>

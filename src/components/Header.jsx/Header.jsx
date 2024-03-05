@@ -15,10 +15,10 @@ function Header() {
           <Link to="" className={styles.flashcards}>
             <p> Home</p>
           </Link>
-          <Link to="create" className={styles.flashcards}>
+          <Link to="/create" className={styles.flashcards}>
             <p> Create</p>
           </Link>
-          <Link to="cardsets" className={styles.flashcards}>
+          <Link to="/cardsets" className={styles.flashcards}>
             <p> Flashcards</p>
           </Link>
           <Logout />

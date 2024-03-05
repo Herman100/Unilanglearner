@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <div className={styles.home}>
         <div className={styles.landing}>
-          <img src={landingbg} alt="" />
+          <img src={landingbg} alt="landing page image" />
           <div className={styles.landtext}>
             <h1>
               Learn Any Language <br />
@@ -30,7 +30,7 @@ export default function Home() {
                 Get Started
               </Link>
             ) : (
-              <Link to="/Unilanglearner/create" className={styles.signup}>
+              <Link to="/create" className={styles.signup}>
                 Create Flashcards Now
               </Link>
             )}
@@ -88,10 +88,7 @@ export default function Home() {
             Start Learning Now
           </Link>
         ) : (
-          <Link
-            to="/Unilanglearner/cardsets"
-            className={styles.signupsecondary}
-          >
+          <Link to="/cardsets" className={styles.signupsecondary}>
             Start Learning Now
           </Link>
         )}
