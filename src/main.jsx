@@ -28,7 +28,7 @@ const router = createBrowserRouter(
       <Route index path="signup" element={<SignUp />} />
       <Route index path="logout" element={<Logout />} />
       <Route index path="reset" element={<ForgotPassword />} />
-      <Route path="Unilanglearner" element={<Layout />}>
+      <Route path="/Unilanglearner/" element={<Layout />}>
         <Route index path="" element={<Home />} />
         <Route index path="create" element={<Create />} />
         <Route index path="cardsets" element={<FlashcardSets />} />

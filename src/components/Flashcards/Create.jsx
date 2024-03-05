@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import styles from "./styles/create.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Card from "./Card";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 import { handleFlashcardSubmit } from "../../firebase/firebase_crud";
@@ -10,6 +10,7 @@ export default function Create() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [cards, setCards] = useState([]);
+  const navigate = useNavigate();
 
   const addCard = () => {
     setNumofCards(numofCards + 1);
@@ -18,7 +19,7 @@ export default function Create() {
 
   const handleSubmit = useCallback(
     (e) => {
-      e.preventDefault();
+      // e.preventDefault();
       const cardsWithHeader = [{ title, description }, ...cards];
       handleFlashcardSubmit(e, cardsWithHeader);
     },
@@ -44,7 +45,7 @@ export default function Create() {
         <div className={styles.create}>
           <div className={styles.heading}>
             <h1>Create a set of flashcards</h1>
-            <Link to="/review">
+            <Link to="/Unilanglearner/cardsets">
               <button
                 className={styles.createButton}
                 onClick={(e) => handleSubmit(e, cards)}

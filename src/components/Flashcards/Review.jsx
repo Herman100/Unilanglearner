@@ -48,8 +48,9 @@ export default function Review() {
         <h1>Reviewing {setId}</h1>
         <div className={styles.link}>
           <IoArrowBack />
-          <Link to="cardsets">Back to Flashcard Sets</Link>
+          <Link to="/Unilanglearner/cardsets">Back to Flashcard Sets</Link>
         </div>
+
         {cards.length > 0 && (
           <div>
             <button

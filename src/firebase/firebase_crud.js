@@ -21,7 +21,7 @@ const user = auth.currentUser;
 
 // CREATE FLASHCARD SET
 export const handleFlashcardSubmit = async (e, cardsWithHeader) => {
-  e.preventDefault();
+  // e.preventDefault();
   if (cardsWithHeader.length !== 0) {
     const database = cardsWithHeader[0].title;
 
