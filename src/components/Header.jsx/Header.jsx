@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./header.module.css";
 import { auth } from "../../firebase/firebase";
+import Logout from "../Authentication/Logout";
 
 function Header() {
   return (
     <>
       <div className={styles.header}>
-        <Link to="/" className={styles.logo}>
+        <Link to="Unilanglearner" className={styles.logo}>
           <p>Unilanglearner</p>
         </Link>
         <div className={styles.headerRight}>
@@ -18,15 +19,7 @@ function Header() {
             <p> Flashcards</p>
           </Link>
 
-          {auth.currentUser ? (
-            <Link to="/" className={styles.logout}>
-              <p>Logout</p>
-            </Link>
-          ) : (
-            <Link to="/login" className={styles.login}>
-              <p>Login</p>
-            </Link>
-          )}
+          <Logout />
         </div>
       </div>
     </>

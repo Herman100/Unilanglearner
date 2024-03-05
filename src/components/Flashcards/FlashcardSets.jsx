@@ -9,7 +9,7 @@ export default function FlashcardSets() {
 
   useEffect(() => {
     const unsubscribe = subscribeToFlashcardSets(setFlashcardSets);
-    return () => unsubscribe();
+    return unsubscribe;
   }, []);
 
   const navigate = useNavigate();

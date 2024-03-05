@@ -24,7 +24,7 @@ export default function Login() {
       setError("");
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
-      navigate("/");
+      navigate("/Unilanglearner");
       passwordRef.current.value = "";
       emailRef.current.value = "";
     } catch (error) {

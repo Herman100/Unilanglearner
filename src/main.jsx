@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       <Route index path="logout" element={<Logout />} />
       <Route index path="reset" element={<ForgotPassword />} />
       <Route path="/" element={<Layout />}>
-        <Route index path="" element={<Home />} />
+        <Route index path="Unilanglearner" element={<Home />} />
         <Route index path="create" element={<Create />} />
         <Route index path="cardsets" element={<FlashcardSets />} />
         <Route index path="sets/:setId" element={<Review />} />

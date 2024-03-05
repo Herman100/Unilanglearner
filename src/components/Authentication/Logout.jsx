@@ -10,7 +10,7 @@ function Logout() {
   async function logoutUser() {
     try {
       await logout();
-      navigate("/login");
+      navigate("/Unilanglearner");
     } catch (error) {
       console.log(error);
     }
@@ -23,7 +23,7 @@ function Logout() {
           <button
             type="button"
             className={styles.logoutButton}
-            onClick={logoutUser}
+            onClick={() => navigate("/login")}
           >
             Login
           </button>

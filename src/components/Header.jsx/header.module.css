@@ -24,8 +24,10 @@
 
 .headerRight {
   display: flex;
-  gap: 20px;
+  gap: 28px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .header .headerRight a {
@@ -43,7 +45,7 @@
 @media screen and (max-width: 767px) {
   .headerRight {
     display: flex;
-    gap: 5px;
+    gap: 16px;
     flex-wrap: wrap;
   }
 

@@ -16,6 +16,8 @@
 
 .landing img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .landtext {
@@ -36,7 +38,7 @@
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 20px;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .landtext p {
@@ -131,6 +133,8 @@
 @media screen and (max-width: 767px) {
   .landtext {
     padding: 20px;
+    align-items: center;
+    text-align: center;
   }
   .landtext h1 {
     font-size: 2rem;
