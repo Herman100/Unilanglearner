@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       <div className={styles.footer}>
-        <Link to="Unilanglearner" className={styles.about}>
+        <Link to="" className={styles.about}>
           Unilanglearner
         </Link>
         <p>Copyright © {year} taskify. All rights reserved.</p>
