@@ -37,6 +37,7 @@
   color: #fff;
   gap: 20px;
   overflow: auto;
+  cursor: pointer;
 }
 
 .answer {
@@ -51,6 +52,7 @@
   color: #070f2b;
   gap: 20px;
   overflow: auto;
+  cursor: pointer;
 }
 
 #instructions {
