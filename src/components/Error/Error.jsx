@@ -15,7 +15,7 @@ function Error() {
             and try again.
           </p>
 
-          <Link className={styles.error_link} to="Unilanglearner">
+          <Link className={styles.error_link} to="/">
             Home
           </Link>
         </div>
