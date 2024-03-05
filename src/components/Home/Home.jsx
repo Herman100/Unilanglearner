@@ -30,7 +30,7 @@ export default function Home() {
                 Get Started
               </Link>
             ) : (
-              <Link to="/cardsets" className={styles.signup}>
+              <Link to="cardsets" className={styles.signup}>
                 Create Flashcards Now
               </Link>
             )}
@@ -88,7 +88,7 @@ export default function Home() {
             Start Learning Now
           </Link>
         ) : (
-          <Link to="/cardsets" className={styles.signupsecondary}>
+          <Link to="cardsets" className={styles.signupsecondary}>
             Start Learning Now
           </Link>
         )}
